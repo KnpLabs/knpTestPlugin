@@ -61,6 +61,7 @@ abstract class knpFunctionalTest extends sfTestBrowser
     {
       $conn->beginTransaction();
       $this->setUp();
+      $this->restart();
       $this->title($this->humanize($method));
 
       try
